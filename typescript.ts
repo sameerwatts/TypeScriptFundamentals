@@ -88,3 +88,39 @@ let person = {
 
 fullName(person);
 
+
+// classes
+class Employee {
+    public employeeName: string; // for free accessability
+    // private employeeName: string; // accessibility only with in the class
+    // protected employeeName: string; // accessibility with in the class and classes derived from it
+
+    constructor(name: string) {
+        this.employeeName = name;
+    }
+
+    greet() {
+        console.log(`Good morning ${this.employeeName}`)
+    }
+}
+
+let emp1 = new Employee('Sameer');
+
+console.log(emp1.employeeName);
+emp1.greet();
+
+class Manager extends Employee {
+    constructor(managerName: string) {
+        super(managerName);
+    }
+
+    delegateWork() {
+        console.log(`Manager delegating tasks`)
+    }
+}
+
+let m1 = new Manager('Kunal')
+
+m1.delegateWork();
+m1.greet();
+console.log(m1.employeeName);
