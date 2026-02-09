@@ -52,3 +52,22 @@ let p = 30;
 let multitype: string | boolean;
 multitype = 'isDataAvailable';
 multitype = true
+
+function add(num1: number, num2?: number): number {
+    if(num2) {
+        return num1 + num2;
+    }
+    return num1 + 3;
+}
+
+function add1(num1: number, num2: number = 4): number {
+        return num1 + num2;
+}
+
+console.log(add(5, 10));
+// add(5, 'ten')
+
+console.log(add(5));
+console.log(add1(5, 6));
+console.log(add1(5));
+
