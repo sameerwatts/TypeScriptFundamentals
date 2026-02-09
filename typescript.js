@@ -64,3 +64,11 @@ console.log(add(5, 10));
 console.log(add(5));
 console.log(add1(5, 6));
 console.log(add1(5));
+function fullName(person) {
+    console.log("".concat(person.firstname, " ").concat(person.lastname));
+}
+var person = {
+    firstname: 'Sam',
+    lastname: 'Watts'
+};
+fullName(person);

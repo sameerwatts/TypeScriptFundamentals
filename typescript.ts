@@ -71,3 +71,20 @@ console.log(add(5));
 console.log(add1(5, 6));
 console.log(add1(5));
 
+// interface
+interface Person {
+    firstname: string;
+    lastname?: string;
+}
+
+function fullName(person: Person) {
+    console.log(`${person.firstname} ${person.lastname}`);
+}
+
+let person = {
+    firstname: 'Sam',
+    lastname: 'Watts'
+}
+
+fullName(person);
+
