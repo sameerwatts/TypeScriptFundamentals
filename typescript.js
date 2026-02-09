@@ -89,6 +89,8 @@ var person = {
 fullName(person);
 // classes
 var Employee = /** @class */ (function () {
+    // private employeeName: string; // accessibility only with in the class
+    // protected employeeName: string; // accessibility with in the class and classes derived from it
     function Employee(name) {
         this.employeeName = name;
     }

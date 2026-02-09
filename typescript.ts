@@ -91,7 +91,9 @@ fullName(person);
 
 // classes
 class Employee {
-    employeeName: string;
+    public employeeName: string; // for free accessability
+    // private employeeName: string; // accessibility only with in the class
+    // protected employeeName: string; // accessibility with in the class and classes derived from it
 
     constructor(name: string) {
         this.employeeName = name;
