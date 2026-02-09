@@ -49,3 +49,18 @@ var p = 30;
 var multitype;
 multitype = 'isDataAvailable';
 multitype = true;
+function add(num1, num2) {
+    if (num2) {
+        return num1 + num2;
+    }
+    return num1 + 3;
+}
+function add1(num1, num2) {
+    if (num2 === void 0) { num2 = 4; }
+    return num1 + num2;
+}
+console.log(add(5, 10));
+// add(5, 'ten')
+console.log(add(5));
+console.log(add1(5, 6));
+console.log(add1(5));
