@@ -37,5 +37,18 @@ console.log(off);
 let random: any = 10;
 random = true
 
-let unknownVariable: unknown = 10;
-(unknownVariable as string).toUpperCase();
+// Need more info
+// let unknownVariable: unknown = 'string';
+// (unknownVariable as string).toUpperCase();
+
+// type inference
+let a;
+a = 10;
+a = 'string'
+a = true;
+let p = 30;
+
+// union type
+let multitype: string | boolean;
+multitype = 'isDataAvailable';
+multitype = true
