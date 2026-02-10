@@ -1,3 +1,4 @@
+export type Name = { first: string; last: string };
 export type personProp = {
-    name: { first: string; last: string };
-  };
+  name: Name;
+};
