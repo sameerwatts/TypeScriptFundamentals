@@ -5,8 +5,9 @@ function App() {
   return (
     <div id="root">
       <Button
-        handleClick={(e) => {
+        handleClick={(e, id) => {
           console.log("button clicked", e);
+          console.log("button clicked id", id);
         }}
       />
     </div>
