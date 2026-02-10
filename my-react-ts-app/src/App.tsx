@@ -5,6 +5,7 @@ import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
+import GreetWithOptionalMessage from "./components/GreetWithOptionalMessage";
 
 function App() {
   const person = {
@@ -28,6 +29,7 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Sameer Watts</Heading>
       </Oscar>
+      <GreetWithOptionalMessage name="Sameer" isLoggedIn={true} />
     </div>
   );
 }
