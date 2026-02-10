@@ -1,7 +1,7 @@
 import type { Name } from "./Person.types";
 
 type PersonListProps = {
-  nameList: Name[];
+  nameList: Name [];
 };
 
 const PersonList = ({ nameList }: PersonListProps) => {
