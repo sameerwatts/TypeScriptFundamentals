@@ -1,8 +1,8 @@
 type OscarProps = {
-    children: React.ReactNode;
-}
-const Oscar = (props: OscarProps) => {
-  return props.children;
+  children: React.ReactNode;
+};
+const Oscar = ({ children }: OscarProps) => {
+  return children;
 };
 
 export default Oscar;

@@ -4,13 +4,16 @@ type GreetWithOptionalMessageProps = {
   isLoggedIn: boolean;
 };
 
-const GreetWithOptionalMessage = (props: GreetWithOptionalMessageProps) => {
-  const { messageCount = 0 } = props;
+const GreetWithOptionalMessage = ({
+  isLoggedIn,
+  name,
+  messageCount = 0,
+}: GreetWithOptionalMessageProps) => {
   return (
     <div>
       <h2>
-        {props.isLoggedIn
-          ? `Hey Welcome back ${props.name}, You have ${messageCount} unreadd messages`
+        {isLoggedIn
+          ? `Hey Welcome back ${name}, You have ${messageCount} unreadd messages`
           : `Welcome Guest`}
       </h2>
     </div>
