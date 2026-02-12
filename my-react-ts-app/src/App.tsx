@@ -2,6 +2,7 @@ import "./App.css";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
 import List from "./components/genetics/List";
+import RandomNumber from "./components/restrictions/RandomNumber";
 // import MutableRef from "./components/ref/MutableRef";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div id="root">
       {/* <MutableRef /> */}
       {/* <Private isLoggedIn={true} Component={Profile}/> */}
-      <List
+      {/* <List
         items={["Batman", "Superman", "Wonder Women"]}
         handleListItemClick={(item) => console.log(item)}
         renderItem={(user) => user}
@@ -26,7 +27,8 @@ function App() {
         ]}
         handleListItemClick={(item) => console.log(item)}
         renderItem={(user) => `${user.first} ${user.last}`}
-      />
+      /> */}
+      <RandomNumber value={10} isNegative/>
     </div>
   );
 }
