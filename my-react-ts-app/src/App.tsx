@@ -1,10 +1,7 @@
 import "./App.css";
-import Toast from "./components/templateliterals/Toast";
 
 function App() {
-  return <div id="root">
-    <Toast position='center' />
-  </div>;
+  return <div id="root"></div>;
 }
 
 export default App;
